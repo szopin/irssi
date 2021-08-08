@@ -46,7 +46,7 @@ sed -i 's/git log/#git log/g' autogen.sh
 ./autogen.sh
 %configure %{nil}
 %make_build
-rm /usr/lib/pkgconfig/irssi-1.pc
+
 %install
 %make_install
 
@@ -70,6 +70,7 @@ rm /usr/lib/pkgconfig/irssi-1.pc
 %{_includedir}/irssi/src/irc/flood/*
 %{_includedir}/irssi/src/irc/notifylist/*
 %{_includedir}/irssi/src/lib-config/*
+%exclude /usr/lib/pkgconfig/irssi-1.pc
 /usr/share/man/man1/irssi.1.gz
 
 %changelog
