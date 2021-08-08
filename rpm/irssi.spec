@@ -71,6 +71,7 @@ sed -i 's/git log/#git log/g' autogen.sh
 %{_includedir}/irssi/src/irc/notifylist/*
 %{_includedir}/irssi/src/lib-config/*
 %exclude /usr/lib/pkgconfig/irssi-1.pc
+%exclude /usr/lib64/pkgconfig/irssi-1.pc
 /usr/share/man/man1/irssi.1.gz
 
 %changelog
