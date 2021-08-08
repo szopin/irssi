@@ -8,7 +8,15 @@ URL:            http://www.irssi.org
 Distribution:	SailfishOS
 Packager:	szopin
 Source:         https://github.com/irssi/irssi/releases/download/%{version}/irssi-%{version}.tar.xz
-
+# deps for autogen.sh
+BuildRequires: make
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:  openssl
+BuildRequires:	gcc
+BuildRequires:	glib2-devel
+BuildRequires:	ncurses-devel
+BuildRequires:	pkgconfig
 
 %description
 Irssi is a modular IRC client for UNIX that currently only has a text
