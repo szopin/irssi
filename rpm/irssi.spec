@@ -21,6 +21,17 @@ Jabber, could be added some day, too.
 It is the code that separates Irssi from ircII, BitchX, epic, and the
 rest of the text clients. It is not using the ircII code.
 
+%prep
+
+%setup -q -n %{name}-%{version}/irssi
+
+%build
+./autogen.sh
+%configure
+%make_build
+
+%install
+%make_install
 
 %files
 %config(noreplace) %{_sysconfdir}/irssi.conf
