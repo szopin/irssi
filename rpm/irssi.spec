@@ -7,7 +7,7 @@ Group:          Productivity/Networking/IRC
 URL:            http://www.irssi.org
 Distribution:	SailfishOS
 Packager:	szopin
-Source:         https://github.com/irssi/irssi/releases/download/%{version}/irssi-%{version}.tar.xz
+Source:         irssi-%{version}.tar.xz
 # deps for autogen.sh
 BuildRequires: make
 BuildRequires:	autoconf
