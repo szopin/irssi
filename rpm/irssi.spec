@@ -34,6 +34,11 @@ rest of the text clients. It is not using the ircII code.
 
 %setup -q -n %{name}-%{version}/irssi
 
+%build
+./autogen.sh
+%configure %{nil}
+%make_build
+
 %install
 %make_install
 
