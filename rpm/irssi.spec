@@ -51,4 +51,19 @@ sed -i 's/git log/#git log/g' autogen.sh
 %dir %{_datadir}/%{name}
 %{_datadir}/%{name}/*
 
+%files devel
+%defattr(-,root,root,-)
+%{_includedir}/irssi/*
+%{_includedir}/irssi/src/*
+%{_includedir}/irssi/src/core/*
+%{_includedir}/irssi/src/fe-common/core/*
+%{_includedir}/irssi/src/fe-common/irc/*
+%{_includedir}/irssi/src/fe-text/
+%{_includedir}/irssi/src/irc/core/*
+%{_includedir}/irssi/src/irc/flood/*
+%{_includedir}/irssi/src/irc/notifylist/*
+%{_includedir}/irssi/src/lib-config/*
+/usr/lib/pkgconfig/irssi-1.pc
+/usr/share/man/man1/irssi.1.gz
+
 %changelog
