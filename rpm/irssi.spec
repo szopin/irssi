@@ -30,6 +30,11 @@ Jabber, could be added some day, too.
 It is the code that separates Irssi from ircII, BitchX, epic, and the
 rest of the text clients. It is not using the ircII code.
 
+%package devel
+Summary:    Development headers and libraries for irssi.
+Requires:   %{name} = %{version}-%{release}
+
+
 %prep
 
 %setup -q -n %{name}-%{version}/irssi
