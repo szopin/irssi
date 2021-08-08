@@ -46,6 +46,7 @@ sed -i 's/git log/#git log/g' autogen.sh
 %files
 %config(noreplace) %{_sysconfdir}/irssi.conf
 %{_bindir}/irssi
+%doc /usr/share/doc/irssi/*
 # scripts & themes
 %dir %{_datadir}/%{name}
 %{_datadir}/%{name}/*
