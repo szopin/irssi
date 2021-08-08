@@ -17,6 +17,7 @@ BuildRequires:	gcc
 BuildRequires:	glib2-devel
 BuildRequires:	ncurses-devel
 BuildRequires:	pkgconfig
+BuildRequires:	git
 
 %description
 Irssi is a modular IRC client for UNIX that currently only has a text
@@ -34,7 +35,7 @@ rest of the text clients. It is not using the ircII code.
 %setup -q -n %{name}-%{version}/irssi
 
 %build
-#./autogen.sh
+./autogen.sh
 %configure
 %make_build
 
