@@ -12,7 +12,7 @@ Source:         irssi-%{version}.tar.xz
 BuildRequires: make
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:  openssl
+BuildRequires:  openssl-devel
 BuildRequires:	gcc
 BuildRequires:	glib2-devel
 BuildRequires:	ncurses-devel
