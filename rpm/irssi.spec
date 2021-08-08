@@ -34,6 +34,8 @@ rest of the text clients. It is not using the ircII code.
 Summary:    Development headers and libraries for irssi.
 Requires:   %{name} = %{version}-%{release}
 
+%description devel
+Irssi development headers
 
 %prep
 
