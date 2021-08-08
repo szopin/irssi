@@ -2,7 +2,7 @@ Name:           irssi
 Version:        1.2.3
 Release:        1
 Summary:        Modular, Secure, and Well Designed IRC Client
-License:        GPL-2.0-or-later
+License:        GPLv2
 Group:          Productivity/Networking/IRC
 URL:            http://www.irssi.org
 Distribution:	SailfishOS
